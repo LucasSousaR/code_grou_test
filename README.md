@@ -16,7 +16,7 @@ Certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
 
 ## Configuração do Backend
 
-1. Clone este repositório: `git clone https://github.com/seu-usuario/nome-do-repositorio.git`
+1. Clone este repositório: `git clone https://github.com/LucasSousaR/code_grou_test.git`
 2. Navegue até o diretório do backend: `rais do projeto`
 3. Instale as dependências Ruby: `bundle install`
 4. Configure o banco de dados em `.env`
