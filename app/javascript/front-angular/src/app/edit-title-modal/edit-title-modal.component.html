@@ -1,0 +1,19 @@
+
+<div *ngIf="task">
+  <h2 style="text-align: center;" mat-dialog-title>EDIT NOTE</h2>
+  <div mat-dialog-content style="min-width: 338px;">
+    <form class="example-form" >
+      <mat-form-field style="min-width: 100%;" class="example-full-width">
+        <mat-label >Title</mat-label>
+        <input  matInput placeholder="{{task.title}}"  name="title" [(ngModel)]="task.title" required>
+      </mat-form-field>
+
+    </form>
+  </div>
+  <div mat-dialog-actions style="display: flex; justify-content: space-around;">
+    <button mat-stroked-button color="primary" (click)="fecharModal()">CANCEL</button>
+    <button mat-flat-button color="primary" (click)="salvarAlteracoes()">APPLY</button>
+  </div>
+
+
+</div>

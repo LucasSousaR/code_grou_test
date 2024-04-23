@@ -1,0 +1,42 @@
+.modal {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #333;
+  min-width: 320px;
+  position: fixed;
+  left: 50%;
+  padding: 24px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 11;
+}
+
+.overlay {
+  background: #ffffff;
+  height: 100vh;
+  left: 0;
+  opacity: 0.5;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 10;
+}
+
+.icon {
+  display: none;
+}
+
+.show-icons .icon {
+  display: inline-block;
+}
+.th-none{
+  display: none;
+}
+.icon-container {
+  margin-left:90%;
+}
+.custom-list-item {
+  color: #f0f0f0; /* Defina a cor de fundo desejada */
+  height: 40px;
+
+}

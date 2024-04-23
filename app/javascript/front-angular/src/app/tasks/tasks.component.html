@@ -1,0 +1,26 @@
+
+<mat-list>
+    <mat-list-item class="custom-list-item" *ngFor="let task of dataSource; let i = index"
+                   [class.show-icons]="hoveredRowIndex === i"
+                   (mouseenter)="setHoveredRowIndex(i)"
+                   (mouseleave)="setHoveredRowIndex(null)">
+
+      <div  style="display: flex; justify-content: space-around; ">
+        <h3 style=" height: 16px!important;" matListItemTitle>{{ task.title }}</h3>
+
+        <p matListItemLine  >
+          <button  mat-icon-button matTooltip="Editar" (click)="editarTask(task)"  *ngIf="hoveredRowIndex === i">
+            <mat-icon>edit</mat-icon>
+          </button>
+          <button   mat-icon-button matTooltip="Excluir" (click)="excluirTask(task)"  *ngIf="hoveredRowIndex === i">
+            <mat-icon>delete</mat-icon>
+          </button>
+        </p>
+
+      </div>
+
+
+
+    </mat-list-item>
+</mat-list>
+

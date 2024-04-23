@@ -1,0 +1,21 @@
+
+<div  >
+  <h2 style="text-align: center;" mat-dialog-title>NEW NOTE</h2>
+  <div mat-dialog-content style="min-width: 338px;">
+    <form class="example-form" >
+      <mat-form-field style="min-width: 100%;" class="example-full-width">
+        <mat-label >Title</mat-label>
+        <input  matInput placeholder="Input your note..."  [(ngModel)]="newTask.title" name="title" required>
+      </mat-form-field>
+
+    </form>
+  </div>
+  <div mat-dialog-actions style="display: flex; justify-content: space-around;">
+    <button mat-stroked-button color="primary" (click)="fecharModal()">CANCEL</button>
+    <button mat-flat-button color="primary" (click)="criarTask()">APPLY</button>
+  </div>
+
+
+</div>
+
+
